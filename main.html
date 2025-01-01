@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yiding Chen</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="webicon.png" type="image/x-icon">
+</head>
+<body>
+    <section id="sidebar">
+        <img id="switch" src="hamburger.png" alt="Menu">
+        <div id="prof">
+            <img id="suit" src="Suit-blue.jpg" alt="Profile Picture">
+            <h1 id="name">Yiding Chen</h1>
+        </div>
+
+        <div id="icons">
+            <img class="icon" id="gb" src="github.png" alt="github">
+            <img class="icon" id="lkin" src="linkedin.png" alt="linkedin">
+            <img class="icon" id="dc" src="facebook.png" alt="facebook">
+            <img class="icon" id="email" src="email.png"  alt="email" onclick="copyEmail()">
+        </div>
+        <hr>
+        <div id="nav">
+            <div class="navsec">
+                <img class="icon" id="about" src="aboutme.png" alt="home">
+                <a href="#selfintro" class="nav">About Me</a>
+            </div>
+            
+            <div class="navsec">
+                <img class="icon" id="proj" src="project.png" alt="projects">
+                <a href="#Portfolio" class="nav">Highlights</a>
+            </div>
+
+            <div class="navsec">
+                <img class="icon" id="res" src="resume.png" alt="resume">
+                <a href="#resume" class="nav">Resume</a>
+            </div>
+
+            <div class="navsec">
+                <img class="icon" id="hon" src="honor.png" alt="honors">
+                <a href="#honors" class="nav">Honors</a>
+            </div>
+
+            <div class="navsec">
+                <img class="icon" id="edu" src="edu.png" alt="education">
+                <a href="#edu" class="nav">Education</a>
+            </div>
+
+            <div>
+                <p id="cr">&copy; 2023 Yiding Chen</p>
+            <div>
+
+        </div>
+        
+    </section>
+
+    <section id="selfintro" class="content">
+        <h1 id="title">About Me</h1>
+        <div id="intro">
+            <p>I kindly invite you to take a moment to explore my website. It showcases my skills, projects, and experiences that reflect my passion and dedication to the field of computer science.</p>
+            <p>I sincerely hope you will consider my application, and I am excited about the opportunity to contribute to your team and make a meaningful impact. Thank you for your time and consideration!</p>
+            <p id="introtext">"My name is Yiding Chen, and I’m a final-year Computer Science Master student at <strong>Washington University in St.Louis</strong>. You can call me <strong>Kevin</strong>. Technology has always fascinated me, especially how it can transform everyday life, which motivated me to dive deep into this field.</p>
+            <p>Through my studies, I’ve gained hands-on experience in programming languages like <strong>Python</strong> and <strong>Java</strong> and explored fields like web development and machine learning. For instance, I developed a web-based application that helps small businesses track their inventory efficiently, which gave me a chance to combine my technical skills with practical problem-solving.</p>
+            <p>Beyond the technical side, I’m passionate about building solutions that are not only functional but also user-centric. My ultimate goal is to create technology that simplifies lives and makes a meaningful impact especially in the AI field. I believe the AI is the future.</p>
+            <p>Thank you for this opportunity, and I look forward to discussing how my skills and passion align with your vision."</p>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="Portfolio" class="content">
+        <h1 id="title">Highlights</h1>
+        <div id="cate">
+            <button class="category active" id="all">All</button>
+            <button class="category" id="internship">Internship</button>
+            <button class="category" id="game">Game</button>
+            <button class="category" id="AI">AI</button>
+            <button class="category" id="web">Website</button>
+        </div>
+        <div id="pictures">
+            <div id="intern1" class="internship">
+                <img src="projects/intern1-1.jpg" alt="Internship: Shanghai Xinkangze Commercial Factoring Co., Ltd." data-description="unpaid internship. General duty is to code extensions to help with commerical factoring.">
+                <h3>Internship: Shanghai Xinkangze Commercial Factoring Co., Ltd.</h3>
+            </div>
+            <div id="intern2" class="internship">
+                <img src="projects/afry-intern.jpg" alt="Internship: ÅF Pöyry AB (AFRY)" data-description="NDA signed. General duty is to assist the team leader in the project.">
+                <h3>Internship: ÅF Pöyry AB (AFRY)</h3>
+            </div>
+            <div id="intern3" class="internship">
+                <img src="projects/hcc-intern.jpg" alt="Internship: Hispanic Chamber of Commerce Metro St. Louis" data-description="Serve as a data analyst intern. The duty is to manage social media accounts, analyzing the performance to attract more people know about the organization."> ">
+                <h3>Internship: Hispanic Chamber of Commerce Metro St. Louis</h3>
+            </div>
+            <div id="game1" class="game">
+                <img src="projects/icon-game.png" alt="3D game: 100-Guns" data-description="3D game with a variety of guns. Collect up to 100 guns. Combine to upgrade. Shooting enormous bullets and challenge your computer!">
+                <h3>3D game: 100-Guns</h3>
+            </div>
+            <div id="game2" class="game">
+                <img src="projects/starter-game2.png" alt="2D game: Wonder Sword" data-description="Wonder sword: a 2D game with a story. Free to swing the sword and enjoy the story.">
+                <h3>2D game: Wonder Sword</h3>
+            </div>
+            <div id="AI1" class="AI">
+                <img src="projects/drl-AI.png" alt="Deep Reinforcement Learning: an improved algorithm" data-description="This project designs a new algorithm to improve the sample efficiency of the experience replay.">
+                <h3>Deep Reinforcement Learning: an improved algorithm</h3>
+            </div>
+            <div id="AI2" class="AI">
+                <img src="projects/llm-AI2.png" alt="Large Language Model: Legal Document Summarizing Tool" data-description="Trained Summarization model on legal documents reached DistilBERT Level.">
+                <h3>Large Language Model: Legal Document Summarizing Tool</h3>
+            </div>
+            <div id="AI3" class="AI">
+                <img src="projects/515-AI.png" alt="Machine Learning: A study in optimizing the model." data-description="optimizing the model with Goldstein-price equation and play with it.">
+                <h3>Machine Learning: A study in optimizing the model.</h3>
+            </div>
+            <div id="web1" class="web">
+                <img src="projects/calendar-web.PNG" alt="Online Calendar" data-description="Free to take it and use it!">
+                <h3>Online Calendar</h3>
+                <a href="https://github.com/Average-Dog/Online-Calendar">(Available on GitHub!)</a>
+            </div>
+            <div id="web2" class="web">
+                <img src="projects/shop-front-web2.PNG" alt="Main page of the App." data-description="Detailed description for Shopping app frame embedded with League of Legends">
+                <h3>Shopping app frame embedded with League of Legends</h3>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Modal Structure -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="caption"></div>
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+    
+    <section id="extra-pictures" style="display: none;">
+        <div id="extra-intern1">
+            <img src="projects/intern1-2.jpg" alt="Internship: Shanghai Xinkangze Commercial Factoring Co., Ltd. - Office">
+        </div>
+        <div id="extra-intern2">
+            <img src="projects/afryafternoon-intern.jpg" alt="Afternoon in the office">
+            <img src="projects/afryoffice-intern.jpg" alt="View of the office">
+        </div>
+        <div id="extra-intern3">
+            <img src="projects/hccfb-intern.PNG" alt="Please subscribe to the HCC facebook. It was part of my unpaid internship.">
+            <p>sample</p>
+        </div>
+        <div id="extra-game1">
+            <img src="projects/map-game.png" alt="Map of the game: 100-Guns">
+            <img src="projects/ingame-game.PNG" alt="Sneak in the channel and pick up more guns to increase your power.">
+        </div>
+        <div id="extra-game2">
+            <img src="projects/art-game2.PNG" alt="Part of the start is art. Push the sword to the start. ">
+            <img src="projects/ingame-game2.PNG" alt="Sword man steal the hammer from the temple">
+            <img src="projects/story-game2.PNG" alt="A sad story of the swordman">
+        </div>
+        <div id="extra-AI1">
+            <img src="projects/algo-AI.PNG" alt="D">
+            <img src="projects/ddr-AI.png" alt="Deep Reinforcement Learning: an improved algorithm - performance">
+            <img src="projects/td-AI.png" alt="Deep Reinforcement Learning: an improved algorithm - performance">
+            <img src="projects/pacman-AI.gif" alt="Apply the trained model to the Atari game: Ms. Pacman">
+            <img src="projects/q_bert-AI.gif" alt="Apply the trained model to the Atari game: Q*bert">
+        </div>
+        <div id="extra-AI2">
+            <img src="projects/perf2-AI2.PNG" alt="The bar chart showing the performance of the model.">
+            <img src="projects/performance-AI2.PNG" alt="The data of the performance of the model.">
+        </div>
+        <div id="extra-AI3">
+            <img src="projects/515-AI2.png" alt="Learning Curve of the model using the Goldstein-price equation.">
+            <p>See Full report</p>
+        </div>
+        <div id="extra-web1">
+            <img src="projects/calendarLog-web.PNG" alt="Login Page of the calendar.">
+            <img src="projects/calendarEdit-web.PNG" alt="High flexiblity of editing the events.">
+        </div>
+        <div id="extra-web2">
+            <img src="projects/shop-detail-web2.PNG" alt="You have the right to know all the details of a product.">
+        </div>
+    </section>
+    
+    <hr>
+
+    <section id="resume" class="content">
+        <h1 id="title">Resume <img id="download-icon" src="downloading.png" alt="Download Resume" onclick="downloadResume()"></h1>
+
+    </section>
+
+    <hr>
+
+    <section id="honors" class="content">
+        <h1 id="title">Honors</h1>
+        <div id="honors">
+            <ul>
+                <li>Dean's List, Illinois College, 2020-2022</li>
+                <li>Award of Duel Degree Scholarship, 2021</li>
+            </ul>
+    </section>
+
+    <hr>
+
+    <section id="edu" class="content">
+        <h1 id="title">Education</h1>
+        <div class="timeline-item" id="first">
+            <div class="timeline-circle"></div>
+            <div class="timeline-time">2025-05</div>
+            <div class="timeline-item-content">
+                <h2>Washington University in St. Louis</h2>
+                <ul>
+                    <li><strong>Major:</strong> Computer Science, <strong>Minor:</strong> Supply Chain</li>
+                    <li><strong>Scholarship:</strong> Dual Degree Program</li>
+                    <li>Graduate Certificate: Data Mining & Machine Learning</li>
+                    <li>Candidate for Bachelor of Science - May 2025</li>
+                    <li>Candidate for Master of Science - May 2025</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="timeline-item" id="second">
+            <div class="timeline-circle"></div>
+            <div class="timeline-time">2022-05</div>
+            <div class="timeline-item-content">
+                <h2>Illinois College</h2>
+                <ul>
+                    <li><strong>Major:</strong> Physics, <strong>Minor:</strong> Math</li>
+                    <li><strong>Bachelor of Science:</strong> Physics</li>
+                    <li><strong>Scholarship:</strong> Dual Degree Program</li>
+                    <li><strong>GPA:</strong> 3.58/4.00</li>
+                </ul>
+                
+            </div>
+        </div>
+        <div class="timeline-item" id="third">
+            <div class="timeline-circle"></div>
+            <div class="timeline-time">2019-01</div>
+        </div>
+    </section>
+
+    <div id="notification">Email Address Copied!</div>
+
+    <script src="main.js"></script>
+</body>
+</html>
